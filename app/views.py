@@ -3,7 +3,6 @@ from .forms import UploadFileForm
 from .models import UploadFile
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
 from io import BytesIO
 import base64
 
@@ -59,7 +58,10 @@ def process_file(request):
     histograms = []
     for column in df.select_dtypes(include=['float64', 'int64']).columns:
         plt.figure()
-        sns.histplot(df[column].dropna(), kde=True)
+        df[column].dropna().hist(bins=30, edgecolor='k', alpha=0.7)
+        plt.title(f'Histogram for {column}')
+        plt.xlabel(column)
+        plt.ylabel('Frequency')
         buf = BytesIO()
         plt.savefig(buf, format='png')
         buf.seek(0)

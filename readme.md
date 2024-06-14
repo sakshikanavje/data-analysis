@@ -22,8 +22,8 @@ This Django web application allows users to upload CSV files, perform data analy
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
-   cd <repository-name>
+   git clone https://github.com/sakshikanavje/data-analysis.git
+   cd data-analysis
 
 ## Create a virtual environment:
 

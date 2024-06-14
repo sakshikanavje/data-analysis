@@ -2,4 +2,3 @@ django
 pandas
 numpy
 matplotlib
-seaborn

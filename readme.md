@@ -1,12 +1,12 @@
 # Django Data Visualization Project
 
-This Django web application allows users to upload CSV files, perform data analysis using pandas and numpy, and visualize the results using matplotlib and seaborn.
+This Django web application allows users to upload CSV files, perform data analysis using pandas and numpy, and visualize the results using matplotlib.
 
 ## Features
 
 - **File Upload**: Users can upload CSV files containing organizational data.
 - **Data Analysis**: Performs basic data analysis including displaying data head, summary statistics, and identifying missing values.
-- **Data Visualization**: Generates histograms for numerical columns using matplotlib and seaborn.
+- **Data Visualization**: Generates histograms for numerical columns using matplotlib.
 - **User Interface**: Provides a simple web interface to interact with uploaded data and view analysis results.
 
 ## Requirements
@@ -16,7 +16,6 @@ This Django web application allows users to upload CSV files, perform data analy
 - pandas
 - numpy
 - matplotlib
-- seaborn
 
 ## Setup Instructions
 
